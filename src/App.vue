@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Header/>
-    <Jumbotron/>
     <Main/>
     <Footer/>
   </div>
@@ -9,7 +8,6 @@
 
 <script>
 import Header from './components/Header.vue'
-import Jumbotron from './components/Jumbotron.vue'
 import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 
@@ -18,7 +16,6 @@ export default {
   name: 'App',
   components: {
     Header,
-    Jumbotron,
     Main,
     Footer
   }
@@ -35,6 +32,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
+  background-color: #F5F5F1;
 }
 </style>

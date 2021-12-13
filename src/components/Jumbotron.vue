@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="jumbo-container">
     <div class="event-tab">
         <div class="todays-pick">
             TODAY'S PICK
@@ -22,7 +22,7 @@ export default {
 
 <style>
 
-    .container{
+    .jumbo-container{
         width: 100%;
         height: 700px;
         background-image: url("../assets/single-post-img3.jpg");
