@@ -1,9 +1,9 @@
 <template>
     <div class="recipes-container">
-       <span class="recipes-title">
+       <span class="recipes-title title">
            POPULAR RECIPES
        </span>
-       <span class="recipes-subtitle">
+       <span class="recipes-subtitle subtitle">
            Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspendisse maximus lacus non nunc lacinia lobortis.
        </span>
        <div class="recipes-column-container">
@@ -65,13 +65,13 @@ export default {
         width: 62%;
         margin: 0 auto;
     }
-    .recipes-title{
+    .title{
         text-align: center;
         display: block;
         font-size: 20px;
         color: #262628;
     }
-    .recipes-subtitle{
+    .subtitle{
         margin: 30px auto;
         width: 45%;
         text-align: center;
