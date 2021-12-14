@@ -17,17 +17,13 @@
       </div>
     </div>
     <div class="header-logo">
-      <img src="../assets/avada-food-logo.png" alt="">
+      <img src="../assets/avada-food-logo.png" alt="logo">
     </div>
     <div class="header-menu">
       <ul>
-        <li>Home</li>
-        <li>Recipes</li>
-        <li>Places</li>
-        <li>Blog</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li><img src="../assets/image.svg" alt=""></li>
+        <li v-for="link,i in links" :key="i">
+          {{link}}
+        </li>
       </ul>
     </div>
   </div>
@@ -35,7 +31,11 @@
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props:{
+    links: Array,
+    logo: String
+  }
 }
 </script>
 

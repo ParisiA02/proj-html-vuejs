@@ -4,6 +4,7 @@
         <Journal/>
         <Recipes/>
         <Collection/>
+        <Blog/>
     </div>
 </template>
 
@@ -13,6 +14,7 @@ import Jumbotron from '../components/Jumbotron.vue'
 import Journal from '../components/Journal.vue'
 import Recipes from '../components/Recipes.vue'
 import Collection from '../components/Collection.vue'
+import Blog from '../components/Blog.vue'
 
 export default {
   name: 'Main',
@@ -20,7 +22,8 @@ export default {
       Jumbotron,
       Journal,
       Recipes,
-      Collection
+      Collection,
+      Blog
   }
 }
 </script>
