@@ -42,7 +42,7 @@
             <div class="line"></div>
         </div>
     </div>
-    <div class="blod-down-column-container">
+    <div class="blog-down-column-container">
         <div class="blog-image-container">
             <div class="blog-image-card">
                 <div class="blog-img">
@@ -113,6 +113,49 @@
             <button class="btn more-post-btn">
                 LOAD MORE POSTS
             </button>
+        </div>
+        <div class="down-right-column">
+            <input type="search" placeholder="Search...">  
+            <div class="social-container">
+                <span>Follow Us</span>
+                <ul>
+                    <li><img src="../assets/image.svg" alt=""></li>
+                    <li><img src="../assets/image.svg" alt=""></li>
+                    <li><img src="../assets/image.svg" alt=""></li>
+                    <li><img src="../assets/image.svg" alt=""></li>
+                    <li><img src="../assets/image.svg" alt=""></li>
+                </ul>
+            </div>
+            <button class="btn popular-btn">
+                Popular
+            </button>
+            <button class="btn recent-btn">
+                Recent
+            </button>
+            <div class="comment-container">
+                <div class="comment-img food">  
+                </div>
+                <div class="comment-text">
+                    <span class="comment-title">Food Corner: Top Japanese Restaurants for sushi</span>
+                    <span class="comment-date">March 25th, 2019</span>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-img  singapore">  
+                </div>
+                <div class="comment-text">
+                    <span class="comment-title">Food Corner: Top Japanese Restaurants for sushi</span>
+                    <span class="comment-date">March 25th, 2019</span>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="comment-img nutrition">  
+                </div>
+                <div class="comment-text">
+                    <span class="comment-title">Food Corner: Top Japanese Restaurants for sushi</span>
+                    <span class="comment-date">March 25th, 2019</span>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -229,9 +272,10 @@ export default {
                 margin-top: 50px;
             }
         }
-        .blod-down-column-container{
+        .blog-down-column-container{
             width: 100%;
-            background-color: red;
+            display: flex;
+            justify-content: space-between;
             
             .blog-image-container{
                 width: 65%;
@@ -267,6 +311,90 @@ export default {
                     width: 100%;
                     color: #333338;
                     background-color: lightgrey;
+                }
+            }
+
+            input{
+                width: 350px;
+                height: 50px;
+                padding-left: 20px;
+                font-size: 20px;
+                border: 2px solid grey;
+                border-radius: 5px;
+            }
+            .down-right-column{
+                width: 30%;
+
+                .social-container{
+                    width: 100%;
+                    float: right;
+
+                    span{
+                        width: 100%;
+                        display: inline-block;
+                        margin: 30px 0 20px;
+                        color: #FC7523;
+                    }
+                    ul{
+                        list-style: none;
+                        
+                        li{
+                            display: inline-block;
+                            margin-right: 20px;
+                        }
+                    }
+                }
+                .btn{
+                   width: 176px; 
+                   margin-top: 30px;
+                   margin-bottom: 40px;
+                   padding: 18px;
+                   color: #333338;
+                   border: 1px solid lightgrey;
+                   font-size: 18px;
+                   background-color: #F5F5F1;
+                }
+                .popular-btn{
+                    background-color: white;
+                    border-right: none;
+                }
+                .comment-container{
+                    width: 100%;
+                    height: 100px;
+                    display: flex;
+
+                    .comment-img{
+                        width: 50px;
+                        height: 50px;
+                        margin-top: 20px;
+                        display: inline-block;
+                        border-radius: 50%;
+                        background-position: center;
+                        background-size: cover;
+                    }
+                    .comment-img.food{
+                        background-image: url("../assets/single-post-img3-66x66.jpg");
+                    }
+                    .comment-img.singapore{
+                        background-image: url("../assets/singapore-featured-image-66x66.jpg");
+                    }
+                    .comment-img.nutrition{
+                        background-image: url("../assets/slide1-bg-66x66.jpg");
+                    }
+                    .comment-text{
+                        width: calc(100% - 60px);
+                        margin-left: 10px;
+                        .comment-title{
+                            margin-top: 20px;
+                            line-height: 25px;
+                            display: inline-block;
+                        }
+                        .comment-date{
+                            display: inline-block;
+                            font-size: 15px;
+                            color: grey;
+                        }
+                    }
                 }
             }
         }
