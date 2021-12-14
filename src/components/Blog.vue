@@ -156,6 +156,25 @@
                     <span class="comment-date">March 25th, 2019</span>
                 </div>
             </div>
+            <div class="blog-tweet">
+                <div class="tweet-author"> 
+                    <span>Tweets</span>
+                    <span class="author">by @Theme_Fusion</span>
+                </div>
+                <div class="tweet-container">
+                    <div class="profile-img"></div>
+                    <div class="tweet-text">
+                        <span>ThemeFusion</span>
+                        <span class="author">by @Theme_Fusion</span>
+                        <div class="tweet-body-text">
+                            Do you neeed sublime WordPress hosting for youre next website? Take advantage of exclusive partner offers that we have secured just for you, & launch your site in seconds with #avada on WP Engine hosting & get 30% Off this Black Friday
+                            <div class="tweet-img-container">
+                                <img src="../assets/En2TRxLW4AEiWUN.jpeg" alt="tweet-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -317,6 +336,7 @@ export default {
             input{
                 width: 350px;
                 height: 50px;
+                margin-top: 40px;
                 padding-left: 20px;
                 font-size: 20px;
                 border: 2px solid grey;
@@ -393,6 +413,62 @@ export default {
                             display: inline-block;
                             font-size: 15px;
                             color: grey;
+                        }
+                    }
+                }
+                .blog-tweet{
+                    width: 100%;
+                    height: 500px;
+                    margin-top: 50px;
+                    border-radius: 10px;
+                    background-color: white;
+
+                    .tweet-author{
+                        padding-top: 20px;
+
+                        span{
+                            font-size: 20px;
+                            margin-left: 20px
+                        }
+                        span.author{
+                            font-size: 12px;
+                        }
+                    }
+                    .tweet-container{
+                        width: 100%;
+                        height: 500px;
+                        display: flex;
+                        padding-right: 30px;
+                        .profile-img{
+                            width: 15%;
+                            height: 50px;
+                            margin-left: 17px;
+                            margin-top: 20px;
+                            background-image: url("../assets/3a74ce3d0532b7773b174c45ca3bd05a_normal.png");
+                            background-position: center;
+                            background-color: green;
+                        }
+                        .tweet-text{
+                            width: 80%;
+                            margin-top: 30px;
+
+                            span{
+                                display: block;
+                            }
+                            span.author{
+                                font-size: 12px;
+                            }
+                            .tweet-body-text{
+                                margin-top: 20px;
+                            }
+                            .tweet-img-container{
+                                width: 100%;
+                                margin-top: 30px;
+                                img{
+                                    width: 100%;
+                                    border-radius: 5px;
+                                }
+                            }
                         }
                     }
                 }

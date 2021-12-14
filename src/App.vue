@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :links="links" :logo="logo"/>
+    <Header :links="links"/>
     <Main/>
     <Footer/>
   </div>
@@ -21,8 +21,7 @@ export default {
   },
   data(){
     return{
-      links:["Home","Recipes","Places","Blog","About","Contact"],
-      logo:"../assets/avada-food-logo.png"
+      links:["Home","Recipes","Places","Blog","About","Contact"]
     }
   }
 }

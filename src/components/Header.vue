@@ -33,8 +33,7 @@
 export default {
   name: 'Header',
   props:{
-    links: Array,
-    logo: String
+    links: Array
   }
 }
 </script>
