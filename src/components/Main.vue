@@ -5,6 +5,7 @@
         <Recipes/>
         <Collection/>
         <Blog/>
+        <Subscribe/>
     </div>
 </template>
 
@@ -15,6 +16,7 @@ import Journal from '../components/Journal.vue'
 import Recipes from '../components/Recipes.vue'
 import Collection from '../components/Collection.vue'
 import Blog from '../components/Blog.vue'
+import Subscribe from '../components/Subscribe.vue'
 
 export default {
   name: 'Main',
@@ -23,7 +25,8 @@ export default {
       Journal,
       Recipes,
       Collection,
-      Blog
+      Blog,
+      Subscribe
   }
 }
 </script>

@@ -190,6 +190,7 @@ export default {
     .blog-container{
         width: 62%;
         margin: 0 auto;
+        margin-bottom: 150px;
 
         .blog-title{
             margin-top: 200px;
