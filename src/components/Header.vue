@@ -9,10 +9,9 @@
       </div>
       <div class="right-header">
         <ul>
-          <li><img src="../assets/image.svg" alt=""></li>
-          <li><img src="../assets/image.svg" alt=""></li>
-          <li><img src="../assets/image.svg" alt=""></li>
-          <li><img src="../assets/image.svg" alt=""></li>
+          <li v-for="social,i in socials" :key="i">
+            <i :class='social'></i>
+          </li>
         </ul>
       </div>
     </div>
@@ -33,7 +32,8 @@
 export default {
   name: 'Header',
   props:{
-    links: Array
+    links: Array,
+    socials: Array
   }
 }
 </script>

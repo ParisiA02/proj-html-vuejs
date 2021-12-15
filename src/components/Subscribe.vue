@@ -80,15 +80,13 @@ export default {
     }
     .subscribe-img-container{
         width: 100%;
-        background-color: red;
-
+        display: flex;
         .subscribe-img{
             width: calc(100%/4);
-            float: left;
             img{
                 width: 100%;
+                display: block;
             }
         }
-
     }
 </style>
