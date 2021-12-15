@@ -1,17 +1,33 @@
 <template>
-  <div class="subscribe-container">
-        <div class="subscribe-title">Subscine & Receive A Free eBook</div>
-        <div class="subscribe-subtitle">
-            Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspensdisse masximus lacus non nunc lacinia
+    <div class="subscribe-and-image-container">
+        <div class="subscribe-container">
+            <div class="subscribe-title">Subscine & Receive A Free eBook</div>
+            <div class="subscribe-subtitle">
+                Aliquam erat volutpat. Ut quis ligula a magna blandit finibus. Suspensdisse masximus lacus non nunc lacinia
+            </div>
+            <div class="search-bar-container">
+                <input type="search" placeholder="insert your email...">
+                <button>Subscribe</button>
+            </div>
+            <div class="subscribe-text">
+                Cras porttior pellentesque sem eu pretium.
+            </div>
         </div>
-        <div class="search-bar-container">
-            <input type="search" placeholder="insert your email...">
-            <button>Subscribe</button>
+        <div class="subscribe-img-container">
+            <div class="subscribe-img">
+                <img src="../assets/Yogurt-Nan-600x395.jpg" alt="">
+            </div>
+            <div class="subscribe-img">
+                <img src="../assets/Mixed-fruits-600x395.jpg" alt="">
+            </div>
+            <div class="subscribe-img">
+                <img src="../assets/r-rachel-park-366508-unsplash-min-600x395.jpg" alt="">
+            </div>
+            <div class="subscribe-img">
+                <img src="../assets/r-michelle-tsang-500721-unsplash-min-600x395.jpg" alt="">
+            </div>
         </div>
-        <div class="subscribe-text">
-            Cras porttior pellentesque sem eu pretium.
-        </div>
-  </div>
+    </div>
 </template>
 
 <script>
@@ -61,5 +77,18 @@ export default {
             margin-top: 40px;
             color: grey;
         }
+    }
+    .subscribe-img-container{
+        width: 100%;
+        background-color: red;
+
+        .subscribe-img{
+            width: calc(100%/4);
+            float: left;
+            img{
+                width: 100%;
+            }
+        }
+
     }
 </style>
