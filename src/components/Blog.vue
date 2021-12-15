@@ -119,11 +119,11 @@
             <div class="social-container">
                 <span>Follow Us</span>
                 <ul>
-                    <li><img src="../assets/image.svg" alt=""></li>
-                    <li><img src="../assets/image.svg" alt=""></li>
-                    <li><img src="../assets/image.svg" alt=""></li>
-                    <li><img src="../assets/image.svg" alt=""></li>
-                    <li><img src="../assets/image.svg" alt=""></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-youtube-square"></i></li>
+                    <li><i class="fab fa-pinterest-square"></i></li>
                 </ul>
             </div>
             <button class="btn popular-btn">
@@ -349,6 +349,11 @@ export default {
                 .social-container{
                     width: 100%;
                     float: right;
+
+                    i{
+                        font-size: 35px;
+                        color: grey;
+                    }
 
                     span{
                         width: 100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" id="header">
     <div class="upper-header">
       <div class="left-header">
         <ul>
@@ -23,6 +23,7 @@
         <li v-for="link,i in links" :key="i">
           {{link}}
         </li>
+        <i class="fas fa-search"></i>
       </ul>
     </div>
   </div>
@@ -42,6 +43,7 @@ export default {
   .header{
     height: 250px;
     background-color: white;
+    color: #333338;
     
     .upper-header{
       width: 60%;
@@ -74,8 +76,13 @@ export default {
       padding: 20px;
       text-align: center;
 
+      i{
+        margin-left: 40px;
+      }
+
       ul{
         list-style-type: none;
+        
         li{
           display: inline;
           padding: 25px;

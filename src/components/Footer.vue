@@ -36,6 +36,7 @@
       </div>
     </div>
     <div class="under-footer">
+      <a href="#header"><span><i class="fas fa-chevron-up"></i></span></a>
       © Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered By WordPress
     </div>
   </div>
@@ -156,6 +157,16 @@ export default {
       vertical-align: middle;
       font-size: 12px;
       color: grey;
+
+      span{
+        background-color: #464646;
+        padding: 20px;
+        border-radius: 50%;
+        position: relative; 
+        right: 600px;
+        cursor: pointer;
+        color: white;
+      }
     }
   }
 </style>

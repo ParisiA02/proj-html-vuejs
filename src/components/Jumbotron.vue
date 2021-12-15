@@ -29,6 +29,7 @@ export default {
         background-size: cover;
         background-position: center;
         padding: 170px;
+        color: #333338;
         
     }
     .todays-pick{

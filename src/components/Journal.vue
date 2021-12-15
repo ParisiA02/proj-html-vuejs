@@ -52,12 +52,14 @@ export default {
 </script>
 
 <style>
+    
     .journal-container{
         width: 62%;
         margin: 0 auto;
         position: relative;
         top: -80px;
         background-color: white;
+        color: #333338;
     }
     .journal-container{
         content: "";
